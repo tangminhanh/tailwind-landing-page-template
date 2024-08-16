@@ -11,19 +11,19 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <section id="hero">
+      <section id="home">
         <Hero />
       </section>
-      <section id="features-planet">
+      <section id="about-me">
         <FeaturesPlanet />
       </section>
-      <section id="business-categories">
+      <section id="work-experience">
         <BusinessCategories />
       </section>
-      <section id="large-testimonial">
+      <section id="projects">
         <LargeTestimonial />
       </section>
-      <section id="cta">
+      <section id="contact">
         <Cta />
       </section>
     </>

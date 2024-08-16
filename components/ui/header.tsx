@@ -45,11 +45,16 @@ export default function Header() {
             <Logo />
           </div>
 
-          {/* Desktop sign in links */}
+          {/* Toggle dark mode */}
           <ul className="flex flex-1 items-center justify-end">
-            <div className="toggle-switch" >
+            <div className="toggle-switch">
               <label className="switch-label">
-                <input type="checkbox" className="checkbox"/>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  checked={theme === "dark"}
+                  onChange={handleThemeChange}
+                />
                 <span className="slider"></span>
               </label>
             </div>

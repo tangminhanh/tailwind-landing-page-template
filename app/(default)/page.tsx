@@ -12,12 +12,21 @@ import Cta from "@/components/cta";
 export default function Home() {
   return (
     <>
-      <Hero />
-      {/* <Passion /> */}
-      <FeaturesPlanet />
-      <BusinessCategories />
-      <LargeTestimonial />
-      <Cta />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="aboutme">
+        <FeaturesPlanet />
+      </section>
+      <section id="workexperience">
+        <BusinessCategories />
+      </section>
+      <section id="projects">
+        <LargeTestimonial />
+      </section>
+      <section id="contact">
+        <Cta />
+      </section>
     </>
   );
 }

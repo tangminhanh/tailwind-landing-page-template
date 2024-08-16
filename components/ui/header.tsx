@@ -1,15 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
 import Link from "next/link";
 import Logo from "./logo";
-import ThemeProvider from "@/app/css/theme-provider";
 import { useTheme } from "next-themes";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
-
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -44,7 +41,34 @@ export default function Header() {
           <div className="flex flex-1 items-center">
             <Logo />
           </div>
-
+          {/* Navigation links */}
+          <ul className="flex flex-1 items-center justify-center space-x-4">
+            <li>
+              <Link href="#home" scroll={false}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="#aboutme" scroll={false}>
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link href="#workexperience" scroll={false}>
+                Work Experience
+              </Link>
+            </li>
+            <li>
+              <Link href="#projects" scroll={false}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact" scroll={false}>
+                Contact
+              </Link>
+            </li>
+          </ul>
           {/* Toggle dark mode */}
            <ul className="flex flex-1 items-center justify-end">
             <div className="toggle-switch">

@@ -24,7 +24,7 @@ const CompanyBar: React.FC = () => {
                 {companies.map((company, index) => (
                     <div
                     key={index}
-                    className={`flex flex-col px-2 md:px-4 items-center cursor-pointer transition-opacity duration-300 ${selectedCompanyIndex !== index ? 'opacity-70' : 'opacity-100'}`}
+                    className={`flex flex-col px-2 md:px-4 items-center  cursor-pointer transition-opacity duration-300 ${selectedCompanyIndex !== index ? 'opacity-70' : 'opacity-100'}`}
                     onClick={() => setSelectedCompanyIndex(index)}
                   >
                     <div className="gradient-border p-1 w-20 h-20 md:w-32 md:h-32"> {/* Adjust the width and height here */}
@@ -36,7 +36,7 @@ const CompanyBar: React.FC = () => {
                         className="rounded-full object-cover w-full h-full"
                       />
                     </div>
-                    <div className={`mt-2 text-center font-semibold ml-2 text-sm ${selectedCompanyIndex === index ? 'bg-gradient-to-r bg-clip-text text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text dark:drop-shadow-[0_0_0.9rem_#ffffff70] scale-115' : 'text-white'}`}>
+                    <div className={`mt-2 text-center font-semibold ml-2 text-gray-900 text-sm ${selectedCompanyIndex === index ? 'bg-gradient-to-r bg-clip-text text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text  dark:drop-shadow-[0_0_0.9rem_#ffffff70] scale-115' : 'text-gray-900 dark:text-gray-100'}`}>
                       {company.name}
                     </div>
                   </div>

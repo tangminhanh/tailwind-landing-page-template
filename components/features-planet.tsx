@@ -5,7 +5,6 @@ import PlanetOverlayImg from "@/public/images/planet-overlay.svg";
 import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
 import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
 import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
-import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function FeaturesPlanet() {
@@ -24,12 +23,12 @@ export default function FeaturesPlanet() {
   }, []);
 
   return (
-    <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
+    <section className="relative before:absolute before:inset-0 before:-z-20 dark:before:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
   {/* Section header */}
   <div className="mx-auto max-w-3xl pb-14 text-center md:pb-15">
-    <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
+    <h2 className="text-3xl font-bold dark:text-gray-200 md:text-4xl">
       About Me
     </h2>
   </div>
@@ -75,13 +74,7 @@ export default function FeaturesPlanet() {
                 height={56}
                 alt="Tag 03"
               />
-              {/* <Image
-                className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
-                src={PlanetTagImg04}
-                width={251}
-                height={56}
-                alt="Tag 04"
-              /> */}
+        
             </div>
           </div>
         </div>
@@ -91,39 +84,56 @@ export default function FeaturesPlanet() {
     <div className="flex flex-col">
     {/*Grid */}
     <div className="grid grid-cols-3 md:gap-5 gap-2 text-center px-2 mx-auto my-auto" data-aos="zoom-y-out">
-    
-      <div className="group rounded-lg border border-transparent p-[0.5em] md:p-[1em] shadow-sm transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-        <div className="flex dark:drop-shadow-[0_0_0.8rem_#ffffff70] items-center">
-          <h3 className="font-semibold ml-[0.5em] text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
+  {['Experience', 'Completed', 'Worked in'].map((title, idx) => (
+    <div key={idx} className="group flex flex-col justify-between items-center rounded-lg border p-[0.5em] md:p-[1em] shadow-sm transition-colors border-gray-500 hover:border-gray-700 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+      <div className="flex dark:drop-shadow-[0_0_0.8rem_#ffffff70] items-center">
+        <h3 className="font-semibold text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
+          {title}
+        </h3>
+      </div>
+      <p className="custom-font rounded-xl text-sm py-[0.4em] px-2 md:text-lg text-center transition-all dark:text-white  hover:text-black hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
+        {idx === 0 ? '1 Year' : idx === 1 ? '10+ Projects' : '4+ Company'}
+      </p>
+    </div>
+  ))}
+</div>
+
+    {/* <div className="grid grid-cols-3 md:gap-5 gap-2 text-center px-2 mx-auto my-auto" data-aos="zoom-y-out">
+      <div className="group flex flex-col rounded-lg border p-[0.2em] sm:p-[0.5em] md:p-[1em] shadow-sm transition-colors border-gray-500 hover:border-gray-700 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="flex flex-col justify-center items-center dark:drop-shadow-[0_0_0.8rem_#ffffff70]">
+          <h3 className="font-semibold  text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
             Experience
           </h3>
-        </div>
-        <p className="custom-font mt-2 rounded-xl px-[0.2em] text-sm py-[0.5em] md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all hover:text-black hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
+          <p className="custom-font mt-2 rounded-xl px-[0.2em] text-sm py-[0.5em] md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all dark:text-white hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
           1 <br/> Year
         </p>
+        </div>
+        
       </div>
-      <div className="group rounded-lg border border-transparent p-[0.5em] md:p-[1em] shadow-sm transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-        <div className="flex dark:drop-shadow-[0_0_0.8rem_#ffffff70] items-center">
-          <h3 className="font-semibold ml-[0.5em] text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
+      <div className="group flex flex-col rounded-lg border p-[0.2em] sm:p-[0.5em] md:p-[1em] shadow-sm transition-colors border-gray-500 hover:border-gray-700 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="flex flex-col justify-center items-center dark:drop-shadow-[0_0_0.8rem_#ffffff70]">
+          <h3 className="font-semibold  text-xs sm:text-sm md:text-sm  bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
             Completed
           </h3>
-        </div>
-        <p className="custom-font mt-2 rounded-xl px-[0.2em] py-[0.5em] text-sm md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all hover:text-black hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
+          <p className="custom-font mt-2 rounded-xl px-[0.2em] text-sm py-[0.5em] md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all dark:text-white hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
           10+<br/>Projects
         </p>
+        </div>
+        
       </div>
-      <div className="group rounded-lg border border-transparent p-[0.5em] md:p-[1em] shadow-sm transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-        <div className="flex dark:drop-shadow-[0_0_0.8rem_#ffffff70] items-center">
-          <h3 className="font-semibold ml-[0.5em] text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
+      <div className="group flex flex-col rounded-lg border p-[0.2em] sm:p-[0.5em] md:p-[1em] shadow-sm transition-colors border-gray-500 hover:border-gray-700 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+        <div className="flex flex-col justify-center items-center dark:drop-shadow-[0_0_0.8rem_#ffffff70]">
+          <h3 className="font-semibold text-xs sm:text-sm md:text-base bg-gradient-to-r bg-clip-text text-center text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text">
             Worked in
           </h3>
-        </div>
-        <p className="custom-font mt-2 rounded-xl px-[0.2em] py-[0.5em] text-sm md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all hover:text-black hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
+          <p className="custom-font mt-2 rounded-xl px-[0.2em] text-sm py-[0.5em] md:px-[1.4em] md:py-[0.6em] md:text-lg text-center transition-all dark:text-white hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-500">
           4+ <br/>Company
         </p>
-      </div>
+        </div>
+        
+      </div> */}
     
-  </div>
+  {/* </div> */}
 
   {/*Skills */}
   <div>
@@ -133,37 +143,37 @@ export default function FeaturesPlanet() {
              <div className="mx-auto mt-[1em] grid max-w-[20em] items-center gap-x-[1em] gap-y-[1em] sm:max-w-[24em] sm:gap-x-[1.5em] lg:mx-0 lg:max-w-none sm:grid-cols-8 grid-cols-4 sm:justify-center">
 
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682840456/image_2_misfnu.png"
             alt="Javascript"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682843046/image_14_1_riikm8.png"
             alt="Typescript"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682843188/PHP-logo.svg_1_osg7q3.png"
             alt="PHP"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682845481/image_16_1_nibbjo.png"
             alt="C#"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682841501/image_8_ow9j2c.png"
             alt="Python"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682841282/image_5_zryc0v.png"
             alt="Tailwind"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682840617/image_3_nrk8jx.png"
             alt="VueJs"
           />
@@ -176,43 +186,43 @@ export default function FeaturesPlanet() {
         </div>
         <div className="mx-auto mt-[2em] grid max-w-[20em] grid-cols-4 items-center gap-x-[1em] gap-y-[1em] sm:max-w-[24em]  sm:gap-x-[1.5em] lg:mx-0 lg:max-w-none sm:grid-cols-8">
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682841142/image_4_vyfc0e.png"
             alt="NuxtJs"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682841744/image_10_zfv0fz.png"
             alt="NodeJs"
           />
           <Image
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="/images/aws.png"
             alt="AWS"
             width="158" height="48"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682843277/image_15_1_mxtpes.png"
             alt=".NET Core"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682843518/mysql-logo-png-transparent_1_uvb3gb.png"
             alt="MySQL"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682844385/microsoft-sql-server-logo-svgrepo-com_2_mtucyf.png"
             alt="MsSQL"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682842207/Microsoft_Azure_Logo.svg_1_pwbd5z.png"
             alt="Azure"
           />
           <img
-            className="max-h-[3em] w-full object-contain col-span-1"
+            className="max-h-[3em] w-full object-contain col-span-1 invert-light dark:filter-none"
             src="https://res.cloudinary.com/dho2pmur7/image/upload/c_scale,w_300/v1682843441/Ubuntu-Logo_1_ppdvx1.png"
             alt="Ubuntu"
           />

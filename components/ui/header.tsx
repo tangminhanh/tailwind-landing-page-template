@@ -33,7 +33,7 @@ export default function Header() {
   }
 
   const handleThemeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTheme(event.target.checked ? "dark" : "light");
+    setTheme(event.target.checked ? "light" : "dark");
   };
 
   return (
@@ -46,13 +46,13 @@ export default function Header() {
           </div>
 
           {/* Toggle dark mode */}
-          <ul className="flex flex-1 items-center justify-end">
+           <ul className="flex flex-1 items-center justify-end">
             <div className="toggle-switch">
               <label className="switch-label">
                 <input
                   type="checkbox"
                   className="checkbox"
-                  checked={theme === "dark"}
+                  checked={theme === "light"}
                   onChange={handleThemeChange}
                 />
                 <span className="slider"></span>

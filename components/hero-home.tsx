@@ -37,14 +37,14 @@ export default function HeroHome() {
   return (
     <section className="relative">
       <PageIllustration />
-      <div className="mx-auto my-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto my-auto max-w-6xl px-4 sm:px-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         {/* Hero content */}
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           {/* Section header */}
           <div className=" pb-8 text-center md:pb-16 grid justify-items-center">
             
             <h1
-              className="mb-5 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+              className="mb-5 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]  md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
@@ -54,7 +54,7 @@ export default function HeroHome() {
             <div className="mb-[0.5em] grid justify-items-center ">
               <video
                 ref={videoRef}
-                className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-lg border-transparent w-full max-w-[10em] md:max-w-[14em]"
+                className="relative drop-shadow-xl dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-lg border-transparent w-full max-w-[10em] md:max-w-[14em]"
                 src="/images/ava.mp4"
                 data-aos="zoom-y-out"
                 autoPlay
@@ -72,7 +72,7 @@ export default function HeroHome() {
 
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-5 text-xl text-gray-700"
+                className="mb-5 text-xl text-gray-700 dark:text-white"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
@@ -85,7 +85,7 @@ export default function HeroHome() {
               >
                 Crafting beautiful and functional web applications is my passion. As a full-stack developer, I bring together my skills in front-end and back-end development to create seamless user experiences.
               </p>
-              <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
+              <div className="">
                 <div
                   className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
                   data-aos="zoom-y-out"
@@ -127,17 +127,11 @@ export default function HeroHome() {
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-gray-200">
                   Creator
-                </span>{" "}
-                {/* <span className="animate-[code-2_10s_infinite]">
-                  ...
-                </span> */}
+                </span>
                 <br />
                 <span className="animate-[code-2_10s_infinite]">
                   content is life
-                </span>{" "}
-                {/* <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span> */}
+                </span>
                 <br />
                 <br />
                 <span className="animate-[code-3_10s_infinite] text-gray-200">
@@ -162,69 +156,6 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
-          {/* Bottom section */}
-          {/* <div
-            className="mx-auto max-w-3xl text-center py-3 flex flex-wrap flex-col items-center p-[1em] md:p-[1.5em]" 
-            data-aos="zoom-y-out"
-            data-aos-delay={900}
-          >
-          <h1 className="custom-font mb-[1em] text-[1.5em] md:text-[2em] px-[1em] font-semibold box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">
-        MY ASPIRATION
-      </h1>
-      <h1 className="custom-font mb-[1em] text-[1.5em] md:text-[2em] font-semibold">
-              Creator - Coding - Community
-      </h1>
-      <div className="relative flex flex-row gap-[1em] place-items-center sm:justify-center before:absolute before:h-[1000px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[300px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-300 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[440px] before:lg:h-[460px]">
-        <div className="relative w-full sm:w-auto px-[1em]">
-          <video
-            ref={videoRef}
-            className="w-full max-w-md relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-lg border-transparent"
-            src="/images/il.mp4"
-            autoPlay
-            muted
-            loop
-          />
-          {!isPlaying && (
-            <button
-              className="absolute inset-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white text-2xl"
-              onClick={togglePlay}
-            />
-          )}
-        </div>
-        <div className="relative w-full sm:w-auto px-[1em]">
-          <video
-            ref={videoRef}
-            className="w-full max-w-md relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-lg border-transparent"
-            src="/images/coding.mp4"
-            autoPlay
-            muted
-            loop
-          />
-          {!isPlaying && (
-            <button
-              className="absolute inset-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white text-2xl"
-              onClick={togglePlay}
-            />
-          )}
-        </div>
-        <div className="relative w-full sm:w-auto px-[1em]">
-          <video
-            ref={videoRef}
-            className="w-full max-w-md relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-lg border-transparent"
-            src="/images/com.mp4"
-            autoPlay
-            muted
-            loop
-          />
-          {!isPlaying && (
-            <button
-              className="absolute inset-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white text-2xl"
-              onClick={togglePlay}
-            />
-          )}
-        </div>
-      </div>
-      </div> */}
         </div>
       </div>
     </section>

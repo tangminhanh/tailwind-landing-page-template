@@ -129,6 +129,9 @@ input[type="search"]::-webkit-search-results-decoration {
   /* Adjust the padding to set the border width */
   border-radius: 50%;
 }
+.invert-light {
+    filter: invert(1);
+  }
 
 @media (max-width: 768px) {
   .flex-col {
@@ -147,3 +150,4 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-top: 1rem !important;
   }
 }
+

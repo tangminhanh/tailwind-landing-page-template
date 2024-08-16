@@ -44,27 +44,27 @@ export default function Header() {
           {/* Navigation links */}
           <ul className="flex flex-1 items-center justify-center space-x-4">
             <li>
-              <Link href="#home" scroll={false}>
-                Home
+              <Link href="#hero" >
+                Hero
               </Link>
             </li>
             <li>
-              <Link href="#aboutme" scroll={false}>
-                About Me
+              <Link href="#features-planet" >
+                Features
               </Link>
             </li>
             <li>
-              <Link href="#workexperience" scroll={false}>
-                Work Experience
+              <Link href="#business-categories">
+                Categories
               </Link>
             </li>
             <li>
-              <Link href="#projects" scroll={false}>
-                Projects
+              <Link href="#large-testimonial" >
+                Testimonials
               </Link>
             </li>
             <li>
-              <Link href="#contact" scroll={false}>
+              <Link href="#cta" >
                 Contact
               </Link>
             </li>

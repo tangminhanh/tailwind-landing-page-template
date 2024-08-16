@@ -19,6 +19,8 @@ export default function BusinessCategories() {
           <h2 className="text-3xl font-bold md:text-4xl">
             Work Experience
           </h2>
+          <p>Click each company to see my journey from concept to creation, showcasing my expertise in a range of technologies and programming languages.</p>
+          <p className="text-sm text-gray-400"><i>Demo app visuals and data are for illustration purposes only, not representative of production use.</i></p>
         </div>
         <CompanyBar />
         

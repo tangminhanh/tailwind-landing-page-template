@@ -4,11 +4,24 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "./logo";
 import { useTheme } from "next-themes";
+import img1 from '@/public/svg/home-alt-svgrepo-com.svg'
+import Image from 'next/image';
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [showButton, setShowButton] = useState(false);
+  const changeNavButton = () => {
+    if (window.scrollY >= 400 && window.innerWidth < 768) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavButton);
+  }, []);
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
@@ -44,28 +57,39 @@ export default function Header() {
           {/* Navigation links */}
           <ul className="flex flex-1 items-center justify-center space-x-4">
             <li>
-              <Link href="#hero" >
-                Hero
+              <Link href="#home" style={{ display: showButton ? "none" : "block" }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="24" height="24">
+                  <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600s600-268.629,600-600S931.371,0,600,0z M600,276.489l292.969,227.71v419.312H691.406V670.386H508.594v253.125H307.031V504.199L600,276.489z"/>
+                </svg>
               </Link>
             </li>
             <li>
-              <Link href="#features-planet" >
-                Features
+              <Link href="#about-me" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="24" height="24">
+                  <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600s600-268.629,600-600S931.371,0,600,0z M600,276.489l292.969,227.71v419.312H691.406V670.386H508.594v253.125H307.031V504.199L600,276.489z"/>
+                </svg>
               </Link>
             </li>
             <li>
-              <Link href="#business-categories">
-                Categories
+              <Link href="#work-experience">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="24" height="24">
+                  <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600s600-268.629,600-600S931.371,0,600,0z M600,276.489l292.969,227.71v419.312H691.406V670.386H508.594v253.125H307.031V504.199L600,276.489z"/>
+                </svg>
               </Link>
             </li>
             <li>
-              <Link href="#large-testimonial" >
-                Testimonials
+              <Link href="#projects" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="24" height="24">
+                  <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600s600-268.629,600-600S931.371,0,600,0z M600,276.489l292.969,227.71v419.312H691.406V670.386H508.594v253.125H307.031V504.199L600,276.489z"/>
+                </svg>
               </Link>
             </li>
             <li>
-              <Link href="#cta" >
-                Contact
+              <Link href="#contact" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="24" height="24">
+                  <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600s600-268.629,600-600S931.371,0,600,0z M600,276.489l292.969,227.71v419.312H691.406V670.386H508.594v253.125H307.031V504.199L600,276.489z"/>
+                </svg>
+
               </Link>
             </li>
           </ul>

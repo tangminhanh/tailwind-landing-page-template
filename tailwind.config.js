@@ -15,6 +15,8 @@ module.exports = {
         darkBackground: '#1a1a2e',
         lightText: '#1a1a2e',
         darkText: '#ffffff',
+        'svg-light': '#fff',
+        'svg-dark': '#4B5563',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

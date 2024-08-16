@@ -36,7 +36,7 @@ const CompanyBar: React.FC = () => {
                         className="rounded-full object-cover w-full h-full"
                       />
                     </div>
-                    <div className={`mt-2 text-center font-semibold ml-2 text-sm bg-gradient-to-r bg-clip-text ${selectedCompanyIndex === index ? 'text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text dark:drop-shadow-[0_0_0.9rem_#ffffff70] scale-115' : ''}`}>
+                    <div className={`mt-2 text-center font-semibold ml-2 text-sm ${selectedCompanyIndex === index ? 'bg-gradient-to-r bg-clip-text text-transparent from-pink-400 via-purple-500 to-indigo-500 animate-text dark:drop-shadow-[0_0_0.9rem_#ffffff70] scale-115' : 'text-white'}`}>
                       {company.name}
                     </div>
                   </div>
@@ -74,7 +74,7 @@ const CompanyBar: React.FC = () => {
                                   type="button"
                                   className={`relative py-2 px-3 text-secondary ${
                                     selectedImageIndices[selectedCompanyIndex] === idx
-                                      ? 'bg-slate-700 rounded-r-lg border-2 border-b-pink-500 text-pink-400'
+                                      ? 'bg-slate-700 rounded-r-lg border-2 border-b-pink-500 text-pink-400 dark:text-pink-600'
                                       : ''
                                   }`}
                                   onClick={() => handleButtonClick(selectedCompanyIndex, idx)}
@@ -109,14 +109,14 @@ const CompanyBar: React.FC = () => {
               {/* Big width: Right side - Job info; Phone width: Center fit*/}
               <div className="w-full md:w-1/2 my-auto mx-auto px-2">
                 <div className="flex flex-col py-3">
-                  <p className="text-sm text-secondary font-medium text-purple-500">{companies[selectedCompanyIndex].role}</p>
-                  <dt className="text-2xl font-semibold leading-7 text-gray-700 mt-2">{companies[selectedCompanyIndex].proj_name}</dt>
-                  <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
+                  <p className="text-sm text-secondary font-medium text-purple-500 dark:text-purple-400 dark:font-semibold">{companies[selectedCompanyIndex].role}</p>
+                  <dt className="text-2xl font-semibold leading-7 text-gray-900 dark:text-gray-100 mt-2">{companies[selectedCompanyIndex].proj_name}</dt>
+                  <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800 dark:text-gray-200">
                     <p className="flex-auto">{companies[selectedCompanyIndex].details}</p>
                   </dd>
                   <div className="flex flex-wrap gap-2 mt-3 ">
                     {Array.isArray(companies[selectedCompanyIndex].method) && companies[selectedCompanyIndex].method.map((method, idx) => (
-                      <span key={idx} className="inline-flex bg-purple-400 items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-800 bg-darkPrimary">
+                      <span key={idx} className="inline-flex bg-purple-500 dark:bg-purple-200 dark:text-purple-800 items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-800 bg-darkPrimary">
                         {method}
                       </span>
                     ))}

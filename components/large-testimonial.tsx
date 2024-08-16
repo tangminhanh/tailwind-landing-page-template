@@ -17,7 +17,7 @@ export default function LargeTestimonial() {
   };
   return (
     <section>
-      <div className="mx-auto full-w px-4 mt-4 sm:px-6 dark:bg-gray-900">
+      <div className="mx-auto full-w px-4 sm:px-6 dark:bg-gray-900 dark:border-gray-900">
         <div className="mx-auto max-w-3xl py-10 text-center md:pb-15 ">
           <h2 className="text-3xl font-bold md:text-4xl dark:text-gray-100 ">
             Projects

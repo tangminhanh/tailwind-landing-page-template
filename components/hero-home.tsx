@@ -92,22 +92,14 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-gradient-to-t from-pink-500 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    className="btn group mb-4 w-full bg-white-500 dark:bg-gradient-to-t from-pink-500 to-indigo-500 bg-[length:100%_100%] text-gray-900 bg-[bottom] dark:text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
                   >
                     <span className="relative inline-flex items-center">
-                      My Resume{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
+                      About Me
                     </span>
                   </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#1"
-                  >
-                    About Me
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -118,14 +110,14 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.slate.300/.8),transparent)1]">
+            <div className="relative aspect-video rounded-2xl bg-gray-200 dark:bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.slate.300/.8),transparent)1]">
               <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_theme(colors.gray.600)_4.5px,_transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
+                <span className="text-[14px] text-green-500 font-bold">
                   My Passion
                 </span>
               </div>
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
+                <span className="animate-[code-1_10s_infinite] text-blue-500">
                   Creator
                 </span>
                 <br />
@@ -134,7 +126,7 @@ export default function HeroHome() {
                 </span>
                 <br />
                 <br />
-                <span className="animate-[code-3_10s_infinite] text-gray-200">
+                <span className="animate-[code-3_10s_infinite] text-indigo-500">
                   Coding
                 </span>
                 <br />
@@ -143,7 +135,7 @@ export default function HeroHome() {
                 </span>
                 <br />
                 <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
+                <span className="animate-[code-5_10s_infinite] text-pink-500">
                   Community 
                 </span>
                 <br />

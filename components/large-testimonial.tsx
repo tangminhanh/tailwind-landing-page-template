@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo01 from "@/public/images/logo-01.svg";
 import React from "react";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import TestimonialImg from "@/public/images/tma.png";
 import styles from "@/app/css/additional-styles/beyond-coding.module.css";
 import { TimelineData } from "@/app/lib/data";
 import Projects from "./projects";
@@ -78,46 +78,33 @@ export default function LargeTestimonial() {
           <div className="space-y-3 text-center">
             <div className="relative inline-flex">
               <svg
-                className="absolute -left-6 -top-2 -z-10"
+                className="absolute -left-6 -top-2 dark:text-svg-light"
                 width={40}
                 height={49}
                 viewBox="0 0 40 49"
-                fill="none"
+                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M22.7976 -0.000136375L39.9352 23.4746L33.4178 31.7234L13.7686 11.4275L22.7976 -0.000136375ZM9.34947 17.0206L26.4871 40.4953L19.9697 48.7441L0.320491 28.4482L9.34947 17.0206Z"
-                  fill="#D1D5DB"
                 />
               </svg>
-              <Image
-                className="rounded-full"
-                src={TestimonialImg}
-                width={48}
-                height={48}
-                alt="Large testimonial"
-              />
+              <div className="relative w-24 h-24 overflow-hidden rounded-full">
+                <Image
+                  className="object-cover"
+                  src={TestimonialImg}
+                  layout="fill"
+                  alt="Large testimonial"
+                />
+              </div>
             </div>
-            <p className="text-2xl font-bold text-gray-900">
+            <p className="text-2xl font-bold text-gray-900 dark:text-gray-50">
               “No pain, no gain. {" "}
-              <em className="italic text-gray-500">Aim for the stars</em>,
+              <em className="italic text-blue-500">Aim for the stars</em>,
               and I'll reach my dream”
             </p>
-            {/* <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">HaiZhou</span>{" "}
-              <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                Tech Manager at Mediacorp
-              </a>
-            </div> */}
           </div>
         </div>
-        {/* <div className="mx-auto max-w-3xl py-10 text-center md:pb-15">
-          <h2 className="text-3xl font-bold md:text-4xl">
-            Projects
-          </h2>
-        </div>
-        <Projects /> */}
       </div>
     </section>
   );

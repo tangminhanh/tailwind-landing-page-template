@@ -14,10 +14,15 @@ body {
   color: #000;
   background-color: #fff;
 }
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
 
-[data-theme="dark"] body {
-  background-color: #000;
-  color: #fff;
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
 
 /* Scrollspy links */

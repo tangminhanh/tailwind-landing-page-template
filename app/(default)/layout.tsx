@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import { ThemeProvider } from "next-themes";
 
 export default function DefaultLayout({
   children,
@@ -23,12 +24,10 @@ export default function DefaultLayout({
   });
 
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Header />
-
       <main className="grow">{children}</main>
-
-      {/* <Footer border={true} /> */}
-    </>
+      {/* <Footer /> */}
+    </ThemeProvider>
   );
 }

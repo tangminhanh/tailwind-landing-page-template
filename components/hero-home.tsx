@@ -44,7 +44,7 @@ export default function HeroHome() {
           <div className=" pb-8 text-center md:pb-16 grid justify-items-center">
             
             <h1
-              className="mb-5 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+              className="mb-5 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]  md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >

@@ -16,8 +16,9 @@ export default function LargeTestimonial() {
     return (index - middleIndex) * separationAngle + baseRotation;
   };
   return (
-    <section className="dark:bg-gray-900">
+    <section className="relative before:absolute before:inset-0 before:-z-20 dark:bg-gray-900">
       <div className="mx-auto full-w px-4 sm:px-6 dark:bg-gray-900 dark:border-gray-900">
+        <div className="py-11 md:py-19">
         <div className="mx-auto max-w-3xl py-10 text-center md:pb-15 ">
           <h2 className="text-3xl font-bold md:text-4xl dark:text-gray-100 ">
             Projects
@@ -74,7 +75,7 @@ export default function LargeTestimonial() {
             ))}
           </div>
         </div>
-        <div className="py-12 md:py-20">
+        <div className="py-5 md:py-18">
           <div className="space-y-3 text-center">
             <div className="relative inline-flex">
               <svg
@@ -104,6 +105,7 @@ export default function LargeTestimonial() {
               and I'll reach my dream”
             </p>
           </div>
+        </div>
         </div>
       </div>
     </section>

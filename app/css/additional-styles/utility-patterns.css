@@ -23,6 +23,10 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+.size-6 {
+  width: 24px;
+  height: 24px;
+}
 
 .form-input,
 .form-textarea,

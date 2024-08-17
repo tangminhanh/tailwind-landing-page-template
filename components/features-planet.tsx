@@ -2,9 +2,9 @@
 import Image from "next/image";
 import PlanetImg from "@/public/images/planet.png";
 import PlanetOverlayImg from "@/public/images/planet-overlay.svg";
-import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
-import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
-import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
+import PlanetTagImg01 from "@/public/images/viet.png";
+import PlanetTagImg02 from "@/public/images/sing.png";
+import PlanetTagImg03 from "@/public/images/phil.png";
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function FeaturesPlanet() {
@@ -28,9 +28,18 @@ export default function FeaturesPlanet() {
         <div className="py-12 md:py-20">
   {/* Section header */}
   <div className="mx-auto max-w-3xl pb-14 text-center md:pb-15">
-    <h2 className="text-3xl font-bold dark:text-gray-200 md:text-4xl">
+    <h2 className="text-3xl font-bold dark:text-gray-200 md:text-4xl animate-fadeIn" data-aos="zoom-y-out">
       About Me
     </h2>
+    <p className="mt-4 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    I am a final-year student specialised in Information Computing at Nanyang Technological University, passionate about future-shaping technologies.
+  </p>
+  <p className="mt-1 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    Growing up in Vietnam, I took the bold step of studying abroad in Singapore to pursue my dreams. In 2024, I was fortunate to intern for three months in Manila, Philippines. These experiences have allowed me to explore diverse cultures and connect with different people.
+  </p>
+  <p className="mt-1 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    I love collaborating with others and enjoy creative activities like video production and singing in my free time.
+  </p>
   </div>
   <div className="flex flex-col items-center lg:px-4 lg:flex-row lg:justify-center">
     {/* Planet */}
@@ -54,24 +63,24 @@ export default function FeaturesPlanet() {
             />
             <div>
               <Image
-                className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
+                className="absolute -left-10 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
                 src={PlanetTagImg01}
-                width={253}
-                height={56}
+                width={100}
+                height={20}
                 alt="Tag 01"
               />
               <Image
-                className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
+                className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-70 transition-opacity duration-500"
                 src={PlanetTagImg02}
-                width={241}
-                height={56}
+                width={100}
+                height={20}
                 alt="Tag 02"
               />
               <Image
-                className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
+                className="absolute -left-2 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-40 transition-opacity duration-500"
                 src={PlanetTagImg03}
-                width={243}
-                height={56}
+                width={100}
+                height={20}
                 alt="Tag 03"
               />
         

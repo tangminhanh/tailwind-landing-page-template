@@ -13,17 +13,18 @@ import CompanyBar from "@/components/company-bar"
 
 export default function BusinessCategories() {
   return (
-    <section className="dark:bg-gray-900">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 dark:bg-gray-900">
-        <div className="mx-auto max-w-3xl py-10 text-center pb-3 dark:bg-gray-900">
-          <h2 className="text-3xl font-bold md:text-4xl dark:text-gray-100">
+    <section className="dark:bg-gray-900 relative before:inset-0 before:-z-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 dark:bg-gray-900 ">
+        <div className="py-13 md:py-20">
+        <div className="mx-auto max-w-3xl text-center pb-13 md:pb-15 dark:bg-gray-900">
+          <h2 className="text-3xl font-bold md:text-4xl dark:text-gray-200">
             Work Experience
           </h2>
           <p className="dark:text-gray-200">Click each company to see my journey from concept to creation, showcasing my expertise in a range of technologies and programming languages.</p>
           <p className="text-sm text-gray-400"><i>Demo app visuals and data are for illustration purposes only, not representative of production use.</i></p>
         </div>
         <CompanyBar />
-        
+        </div>
       </div>
     </section>
   );

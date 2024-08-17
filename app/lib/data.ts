@@ -114,14 +114,14 @@ export const projects: Project[] = [
   {
     title: "Game Development on Unity",
     image: "images/proj/game.png",
-    description: "Develop an interesting game.",
+    description: "Develop an interesting game named Paws&Plates, a unique gaming experience that combines the joy of culinary exploration with a collection of adorable virtual pets. ",
     skills: ["C#", "Unity", "Interface Design"],
     link: "https://github.com/tangminhanh/minesweeper-unity"
   },
   {
     title: "My Portfolio",
     image: "images/proj/tma.png",
-    description: "Built and deploy web with next.js and vercel",
+    description: "Built and deploy web with Next.js and Vercel",
     skills: ["NextJS", "PostgreSQL"],
     link: "https://github.com/tangminhanh/tailwind-landing-page-template"
   },
@@ -135,14 +135,14 @@ export const projects: Project[] = [
   {
     title: "Fake Job Detection",
     image: "images/proj/fakejob.png",
-    description: "Fine-tune a bert model for Multi-label text-classification",
+    description: "Classify jobs as fraudulent versus non-fraudulent based on the 18k trained dataset on Kaggle, further classifying based on location and other factors such as education, function, industry and required experience.",
     skills: ["Data Science", "Machine Learning", "Streamlit"],
     link: "https://github.com/tangminhanh/Fake-job-detection"
   },
   {
     title: "Text Classification Fine-tune Bert Model",
     image: "images/proj/ana.png",
-    description: "Fine-tune a bert model for Multi-label text-classification",
+    description: "Fine-tuning BERT model for Multi-label text-classification with more than 20 labels.",
     skills: ["Python", "Transformers", "Hugging Face"],
     link: "https://github.com/tangminhanh/text-classification"
   },
@@ -156,7 +156,7 @@ export const projects: Project[] = [
   {
     title: "Auto-Adaptive Traffic Light System ",
     image: "images/proj/traffic.png",
-    description: "we refered to this paper 'Zero-VIRUS: Zero-shot VehIcle Route Understanding System for Intelligent Transportation', and used transfer learning to re-trained the model with our custom dataset.",
+    description: "Ưe refered to this paper 'Zero-VIRUS: Zero-shot VehIcle Route Understanding System for Intelligent Transportation', and used transfer learning to re-trained the model with our custom dataset.",
     skills: ["Python", "C++", "transfer learning", "SUMO simulation"],
     link: "https://github.com/tangminhanh/TrafficLightSystemRL-DLW2022-VAlly"
   },
@@ -170,7 +170,7 @@ export const projects: Project[] = [
   {
     title: "RE-Station",
     image: "images/proj/re.png",
-    description: "Integrated Web 3 techniques from Affinidi Pte. Ltd. to leverage Blockchain technology, ensuring data security and transparency in job postings and user interactions.",
+    description: "Designed a multi-purpose interface with an aim to create both intrinsic and extrinsic motivation for employees in virtual settings. This interface will incorporate 2 main features: Virtual Office (Attendance Check Point, To-do list, Working room) and Networking and Learning Booth",
     skills: ["Android", "Dart", "Flutter", "ios-simulator"],
     link: "https://github.com/tangminhanh/RE-Station"
   },

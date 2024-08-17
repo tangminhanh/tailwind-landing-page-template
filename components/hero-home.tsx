@@ -37,7 +37,7 @@ export default function HeroHome() {
   return (
     <section id="hero" className="relative dark:bg-gray-900">
       <PageIllustration />
-      <div className="mx-auto my-auto max-w-6xl px-4 sm:px-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <div className="mx-auto my-auto max-w-6xl px-4 sm:px-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         {/* Hero content */}
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           {/* Section header */}

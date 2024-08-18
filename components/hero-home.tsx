@@ -93,7 +93,7 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full bg-white-500 dark:bg-gradient-to-t from-pink-500 to-indigo-500 bg-[length:100%_100%] text-gray-900 bg-[bottom] dark:text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    href="#about-me"
                   >
                     <span className="relative inline-flex items-center">
                       About Me

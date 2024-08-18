@@ -28,18 +28,18 @@ export default function FeaturesPlanet() {
         <div className="py-12 md:py-20">
   {/* Section header */}
   <div className="mx-auto max-w-3xl pb-14 text-center md:pb-15">
-    <h2 className="text-3xl font-bold dark:text-gray-200 md:text-4xl animate-fadeIn" data-aos="zoom-y-out">
+    <h2 className="text-3xl font-bold dark:text-gray-200 md:text-4xl animate-fadeIn" data-aos="zoom-y-out" data-aos-delay={600}>
       About Me
     </h2>
-    <p className="mt-4 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    <p className="mt-4 mx-auto text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
     I am a final-year student specialised in Information Computing at Nanyang Technological University, passionate about future-shaping technologies.
   </p>
-  <p className="mt-1 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
-    Growing up in Vietnam, I took the bold step of studying abroad in Singapore to pursue my dreams. In 2024, I was fortunate to intern for three months in Manila, Philippines. These experiences have allowed me to explore diverse cultures and connect with different people.
+  <p className="mt-1 mx-auto text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    Growing up in Vietnam, I took the bold step of studying abroad in Singapore to pursue my dreams. In 2024, I was fortunate to intern for three months in Manila, Philippines. These experiences have allowed me to explore diverse cultures and connect with different people. I love collaborating with others and enjoy creative activities like video production and singing in my free time.
   </p>
-  <p className="mt-1 text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
-    I love collaborating with others and enjoy creative activities like video production and singing in my free time.
-  </p>
+  {/* <p className="mt-1 mx-auto text-base text-gray-600 font-medium leading-relaxed dark:text-gray-400 md:text-lg lg:px-10 animate-fadeInUp" data-aos="zoom-y-out">
+    
+  </p> */}
   </div>
   <div className="flex flex-col items-center lg:px-4 lg:flex-row lg:justify-center">
     {/* Planet */}

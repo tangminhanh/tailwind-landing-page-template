@@ -36,9 +36,9 @@ export const companies: Company[] = [
     name: 'TUMAsia',
     role: 'Data Laboratory Assistant',
     proj_name: 'Future Mobility in Singapore',
-    details: 'Sharpened data preparation, summarization, and analytics using Excel and Python. Optimized tracking processes and reached goal 2 months before forecast',
+    details: 'Sharpened data preparation, annotation, summarization, and analytics. Optimized tracking processes and reached goal 2 months before forecast',
     image: '/images/tum.png',
-    method: ['Computer Vision','Python','OpenCV','FFmpeg','Excel'],
+    method: ['Computer Vision','Python','FFmpeg','Excel'],
     display: ['vehicles', 'stat'],
     proj_img: ['/images/work/ve.png','/images/work/ana.png']
   },
@@ -156,7 +156,7 @@ export const projects: Project[] = [
   {
     title: "Auto-Adaptive Traffic Light System ",
     image: "images/proj/traffic.png",
-    description: "Ưe refered to this paper 'Zero-VIRUS: Zero-shot VehIcle Route Understanding System for Intelligent Transportation', and used transfer learning to re-trained the model with our custom dataset.",
+    description: "We refered to this paper 'Zero-VIRUS: Zero-shot VehIcle Route Understanding System for Intelligent Transportation', and used transfer learning to re-trained the model with our custom dataset.",
     skills: ["Python", "C++", "transfer learning", "SUMO simulation"],
     link: "https://github.com/tangminhanh/TrafficLightSystemRL-DLW2022-VAlly"
   },

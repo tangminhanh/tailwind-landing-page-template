@@ -107,7 +107,7 @@ const CompanyBar: React.FC = () => {
                 </div>
               </div>
               {/* Big width: Right side - Job info; Phone width: Center fit*/}
-              <div className="w-full md:w-1/2 my-auto mx-auto px-2">
+              <div className="w-full md:w-1/2 mt-2 mx-auto px-2">
                 <div className="flex flex-col py-3">
                   <p className="text-sm text-secondary font-medium text-purple-500 dark:text-purple-400 dark:font-semibold">{companies[selectedCompanyIndex].role}</p>
                   <dt className="text-2xl font-semibold leading-7 text-gray-900 dark:text-gray-100 mt-2">{companies[selectedCompanyIndex].proj_name}</dt>

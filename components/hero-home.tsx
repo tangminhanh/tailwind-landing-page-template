@@ -122,7 +122,7 @@ export default function HeroHome() {
                 </span>
                 <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  content is life
+                  Content is life
                 </span>
                 <br />
                 <br />

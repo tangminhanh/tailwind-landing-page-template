@@ -161,10 +161,10 @@ export const projects: Project[] = [
     link: "https://github.com/tangminhanh/text-classification"
   },
   {
-    title: "OpenAI API",
-    image: "images/proj/openai.jpeg",
-    description: "Try out OpenAPI Project",
-    skills: ["OpenAI", "JavaScript"],
+    title: "Youtube Downloader",
+    image: "images/proj/utube.png",
+    description: "Built a Youtube Downloader application",
+    skills: ["Python", "Pytube"],
     link: "https://github.com/tangminhanh/open_ai"
   },
   {

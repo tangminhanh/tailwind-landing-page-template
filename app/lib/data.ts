@@ -98,6 +98,13 @@ export const projects: Project[] = [
     link: "https://wis.ntu.edu.sg/webexe/owa/FYP_EEE_STUDENT.show_project?p_proj_id=111270"
   },
   {
+    title: "Financial Stock Data Visualizer",
+    image: "images/proj/fin_page.png",
+    description: "Built an internal tool visualizing stock market risk in real time using Alpha Vantage API. It creates a line chart showing the monthly closing prices of IBM stock over the past year.",
+    skills: ["Java", "Gradle","API", "Spring Boot"],
+    link: "https://wis.ntu.edu.sg/webexe/owa/FYP_EEE_STUDENT.show_project?p_proj_id=111270"
+  },
+  {
     title: "Data Analysis - Transformative Role of Electric Vehicles (EVs)",
     image: "images/proj/ev.png",
     description: "Data Analysis on Determinants for Successful Conversion. Potential impact of this EV conversion on addressing the climate crisis. It offers insights into both short-term and long-term outcomes of implementing EVs on a large scale.",

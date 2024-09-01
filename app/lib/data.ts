@@ -102,7 +102,14 @@ export const projects: Project[] = [
     image: "images/proj/fin_page.png",
     description: "Built an internal tool visualizing stock market risk in real time using Alpha Vantage API. It creates a line chart showing the monthly closing prices of IBM stock over the past year.",
     skills: ["Java", "Gradle","API", "Spring Boot"],
-    link: "https://wis.ntu.edu.sg/webexe/owa/FYP_EEE_STUDENT.show_project?p_proj_id=111270"
+    link: "https://github.com/tangminhanh/fin_page"
+  },
+  {
+    title: "Real Time Stock Data Visualisation",
+    image: "images/proj/result.png",
+    description: "Built a real-time stock data analytics dashboard between 2 stock data. Dashboard could filter the table Group-by and Type of Graph.",
+    skills: ["Typescript", "React"],
+    link: "https://github.com/tangminhanh/forage-jpmc-swe-task-3"
   },
   {
     title: "Data Analysis - Transformative Role of Electric Vehicles (EVs)",
@@ -152,6 +159,13 @@ export const projects: Project[] = [
     description: "Fine-tuning BERT model for Multi-label text-classification with more than 20 labels.",
     skills: ["Python", "Transformers", "Hugging Face"],
     link: "https://github.com/tangminhanh/text-classification"
+  },
+  {
+    title: "OpenAI API",
+    image: "images/proj/openai.jpeg",
+    description: "Try out OpenAPI Project",
+    skills: ["OpenAI", "JavaScript"],
+    link: "https://github.com/tangminhanh/open_ai"
   },
   {
     title: "OpenAI API",
